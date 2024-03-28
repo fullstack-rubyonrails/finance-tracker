@@ -1,0 +1,17 @@
+// Added by Hassaan #import below to modify custom stylesheets for existing  and new bootstrap classes
+
+@import 'bootstrap/dist/css/bootstrap';
+
+// End added by Hassaan #import below to modify custom stylesheets for existing  and new bootstrap classes
+
+.navbar {
+  background-color: gainsboro !important;
+  }
+    
+.navbar-brand {
+  font-size: 2rem;
+  }
+ 
+h1 {
+  color: red;
+  }
