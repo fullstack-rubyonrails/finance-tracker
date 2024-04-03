@@ -13,6 +13,14 @@
     * Added by Hassaan to make understant bootstrap
  *= require bootstrap
     * End added by Hassaan to make understant bootstrap
+* Added by Hassaan to make understant fontawesome
+$fa-font-path: '@fortawesome/fontawesome-free/webfonts';
+@import '@fortawesome/fontawesome-free/scss/fontawesome';
+@import '@fortawesome/fontawesome-free/scss/solid';
+@import '@fortawesome/fontawesome-free/scss/regular';
+@import '@fortawesome/fontawesome-free/scss/brands';
+@import '@fortawesome/fontawesome-free/scss/v4-shims';
+    * End added by Hassaan to make understant fontawesome
 
  *= require_tree .
  *= require_self
