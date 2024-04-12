@@ -1,3 +1,13 @@
+<!-- Since flash message is spanning to full length custom.css.scss results-block will be DIV -->
+<div class="results-block">
+
+<!-- Since we are rendering 'layouts/messages' to handle invalid and empty searches in application.html.erb and  referenced -->
+<!-- that in stock_controll.rb file for invalid and empty searches we will render that here -->
+  <%= render 'layouts/messages' %>
+
+  </div>
+
+<!-- so below code will  be independent for  invalid and empty searches since it rund  only if @stock is true -->
 <% if @stock %>
   <div class="card card-header results-block">
     <strong>Symbol: </strong> <%= @stock.ticker %>
