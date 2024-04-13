@@ -19,3 +19,6 @@
 
 </div>
 <!-- (render 'users/result') Line committed since added div id="results" above -->
+<% if !@tracked_stocks.empty? %>
+  <%= render 'stocks/list' %>
+<% end %>
