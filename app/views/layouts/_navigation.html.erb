@@ -30,7 +30,12 @@
           <a class="nav-link disabled text-white">Disabled</a>
         </li>
       </ul>
-      
+      <ul class='navbar-nav ml-auto'>
+        <li class='nav-item text-white user-name'>
+          <i class="fa-solid fa-user"></i>
+          <%= current_user.full_name %>
+        </li>
+      </ul>
       <form class="d-flex" role="search">
         <button class="btn btn-outline-light logout-button text-white" type="submit">Search</button>  
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
