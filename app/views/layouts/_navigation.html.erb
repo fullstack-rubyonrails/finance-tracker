@@ -17,10 +17,13 @@
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
+            Profile
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
+            
+            <%= link_to edit_user_registration_path, class: 'dropdown-item' do %>
+              <i class="fa-solid fa-user-pen"></i> Edit Profile
+            <% end %>
             <li><a class="dropdown-item" href="#">Another action</a></li>
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="#">Something else here</a></li>
