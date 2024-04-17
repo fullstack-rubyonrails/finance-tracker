@@ -12,4 +12,5 @@ Rails.application.routes.draw do
   get 'search_stock', to: 'stocks#search'
   #generate automatically after running (rails generate resource UserStock user:references stock:references) command
   resources :user_stocks, only: [:create, :destroy]
+  get 'my_friends', to: 'users#my_friends'
 end
