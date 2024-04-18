@@ -17,9 +17,11 @@ class UsersController < ApplicationController
 
 def search
   # convert friend to @friend instance variable to access in my_friend page and display friend's details there.
-    if params[:friend].present?  
-      @friend = params[:friend]
-      if @friend
+    if params[:friend].present?
+      # Below line will return multiple lines so instance variable is  friends not friend
+      @friends = User.search(params[:friend])
+      @friends = current_user.except_current_user(@friends)
+      if @friends
         respond_to do |format|
           format.js {  render partial: 'users/friend_result' }
         end
