@@ -2,13 +2,17 @@ class UsersController < ApplicationController
 
   def my_portfolio
     @tracked_stocks =current_user.stocks
+    @user = current_user
     # now use this  @tracked_stocks  in my  protfolio to show stock details
   end
 
   def my_friends
     @friends = current_user.friends
   end
-
+  def show
+    @user = User.find(params[:id])
+    @tracked_stocks = @user.stocks
+  end
   # def search
   #   render json: params[:friend]
   # end
